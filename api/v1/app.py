@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Flask api app """
 
-import os
 from flask import Flask, jsonify
 from models import storage
 from api.v1.views import app_views
+import os
 
 app = Flask(__name__)
 app.register_blueprint(app_views, url_prefix='/api/v1')
