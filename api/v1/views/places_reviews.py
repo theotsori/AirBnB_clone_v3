@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Places reviews restful"""
-
+from api.v1.views import app_views
 from flask import jsonify, abort, request, Blueprint
 from models.place import Place
 from models.review import Review
