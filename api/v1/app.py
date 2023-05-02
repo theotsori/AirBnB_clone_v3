@@ -6,7 +6,7 @@ Flask API app
 import os
 from flask import Flask, jsonify
 from flask_cors import CORS
-from views import app_views
+from api.v1.views import app_views
 
 
 app = Flask(__name__)
